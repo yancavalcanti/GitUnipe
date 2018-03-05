@@ -6,45 +6,68 @@
     android:layout_height="match_parent"
     tools:context="com.example.yan.gitunipe.MainActivity">
 
-    <EditText
-        android:id="@+id/pesoText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="PesoID"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Peso"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="80dp" />
+    <LinearLayout
+        android:layout_width="372dp"
+        android:layout_height="499dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
-    <EditText
-        android:id="@+id/alturaText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="AlturaId"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Altura"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="151dp" />
+        <EditText
+            android:id="@+id/alturaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imcText"
+            android:layout_marginTop="29dp"
+            android:layout_toEndOf="@+id/imcText"
+            android:layout_weight="1"
+            android:contentDescription="AlturaId"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Altura"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="108dp" />
 
-    <TextView
-        android:id="@+id/imcText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="imc"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="335dp"
-        tools:text="imcText" />
+        <EditText
+            android:id="@+id/pesoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/calcButton"
+            android:layout_alignStart="@+id/alturaText"
+            android:layout_marginBottom="46dp"
+            android:layout_weight="1"
+            android:contentDescription="PesoID"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Peso"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="40dp" />
 
-    <Button
-        android:id="@+id/calcButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="calcButton"
-        android:text="Calcular"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="240dp" />
+        <Button
+            android:id="@+id/calcButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alturaText"
+            android:layout_below="@+id/alturaText"
+            android:layout_marginEnd="52dp"
+            android:layout_marginTop="42dp"
+            android:layout_weight="1"
+            android:contentDescription="calcButton"
+            android:text="Calcular"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <TextView
+            android:id="@+id/imcText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="imc"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="285dp"
+            tools:text="imcText" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
