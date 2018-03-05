@@ -6,13 +6,45 @@
     android:layout_height="match_parent"
     tools:context="com.example.yan.gitunipe.MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/pesoText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:contentDescription="PesoID"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Peso"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/alturaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="AlturaId"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Altura"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/imcText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="imc"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="335dp"
+        tools:text="imcText" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="calcButton"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="240dp" />
 
 </android.support.constraint.ConstraintLayout>
