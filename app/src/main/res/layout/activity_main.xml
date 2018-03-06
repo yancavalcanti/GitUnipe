@@ -13,6 +13,12 @@
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altura" />
+
         <EditText
             android:id="@+id/alturaText"
             android:layout_width="match_parent"
@@ -20,13 +26,18 @@
             android:layout_below="@+id/imcText"
             android:layout_marginTop="29dp"
             android:layout_toEndOf="@+id/imcText"
-            android:layout_weight="1"
             android:contentDescription="AlturaId"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Altura"
             tools:layout_editor_absoluteX="42dp"
             tools:layout_editor_absoluteY="108dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:text="Peso" />
 
         <EditText
             android:id="@+id/pesoText"
@@ -35,11 +46,9 @@
             android:layout_above="@+id/calcButton"
             android:layout_alignStart="@+id/alturaText"
             android:layout_marginBottom="46dp"
-            android:layout_weight="1"
             android:contentDescription="PesoID"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Peso"
             tools:layout_editor_absoluteX="42dp"
             tools:layout_editor_absoluteY="40dp" />
 
@@ -51,7 +60,7 @@
             android:layout_below="@+id/alturaText"
             android:layout_marginEnd="52dp"
             android:layout_marginTop="42dp"
-            android:layout_weight="1"
+            android:layout_weight="0.10"
             android:contentDescription="calcButton"
             android:text="Calcular"
             tools:layout_editor_absoluteX="97dp"
